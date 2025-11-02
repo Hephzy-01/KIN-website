@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KidsInspiring Nation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-purple': '#4c1d95',
+              'brand-purple-dark': '#371a74',
+              'brand-yellow': '#FFD700',
+              'brand-yellow-dark': '#DAA520',
+            },
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 1s ease-out forwards',
+              'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'glow-pulse': 'glowPulse 2s ease-in-out infinite',
+              'float': 'float 6s ease-in-out infinite',
+              'typing-reveal': 'typing 2.5s steps(21, end) forwards',
+              'blink-caret': 'blinkCaret .75s step-end infinite',
+              'background-zoom': 'backgroundZoom 20s ease-out forwards',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              glowPulse: {
+                '0%, 100%': { boxShadow: '0 10px 15px -3px rgba(255, 215, 0, 0.25), 0 4px 6px -4px rgba(255, 215, 0, 0.25)' },
+                '50%': { boxShadow: '0 10px 15px -3px rgba(255, 215, 0, 0.35), 0 4px 6px -4px rgba(255, 215, 0, 0.35)' },
+              },
+              pulse: {
+                '50%': { opacity: '0.8' },
+              },
+              float: {
+                '0%': { transform: 'translatey(0px)' },
+                '50%': { transform: 'translatey(-10px)' },
+                '100%': { transform: 'translatey(0px)' },
+              },
+              typing: {
+                'from': { width: '0' },
+                'to': { width: '100%' }
+              },
+              blinkCaret: {
+                'from, to': { borderColor: 'transparent' },
+                '50%': { borderColor: '#FFD700' },
+              },
+              backgroundZoom: {
+                'from': { transform: 'scale(1)' },
+                'to': { transform: 'scale(1.15)' }
+              }
+            },
+          },
+        },
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&family=Lobster&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-white">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
