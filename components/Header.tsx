@@ -48,7 +48,7 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, currentPage }) => {
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
             <button onClick={() => handleNavClick('home', '#home')} className="flex items-center">
-                <img src="/logo.png" alt="KidsInspiring Nation Logo" className="h-24 w-auto" />
+                <img src="/KIN-website/logo.png" alt="KidsInspiring Nation Logo" className="h-24 w-auto" />
                 <div className="border-l-2 border-brand-yellow pl-1">
                   <p className={`text-sm font-bold tracking-wide leading-tight transition-colors duration-300 ${scrolledOrOpen ? 'text-brand-purple-dark' : 'text-white'}`} style={{ fontFamily: "'Lobster', cursive" }}>
                     raising gods,<br/>building nations
