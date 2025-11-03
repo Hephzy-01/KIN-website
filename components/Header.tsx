@@ -45,12 +45,12 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, currentPage }) => {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolledOrOpen ? 'bg-white/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16 sm:h-20">
           <div className="flex-shrink-0">
             <button onClick={() => handleNavClick('home', '#home')} className="flex items-center">
-                <img src="/KIN-website/logo.png" alt="KidsInspiring Nation Logo" className="h-24 w-auto" />
+                <img src="/KIN-website/logo.png" alt="KidsInspiring Nation Logo" className="h-16 sm:h-20 md:h-24 w-auto" />
                 <div className="border-l-2 border-brand-yellow pl-1">
-                  <p className={`text-sm font-bold tracking-wide leading-tight transition-colors duration-300 ${scrolledOrOpen ? 'text-brand-purple-dark' : 'text-white'}`} style={{ fontFamily: "'Lobster', cursive" }}>
+                  <p className={`text-xs sm:text-sm font-bold tracking-wide leading-tight transition-colors duration-300 ${scrolledOrOpen ? 'text-brand-purple-dark' : 'text-white'}`} style={{ fontFamily: "'Lobster', cursive" }}>
                     raising gods,<br/>building nations
                   </p>
                 </div>
