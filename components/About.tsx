@@ -152,8 +152,12 @@ export const About: React.FC = () => {
             {team.map((member, index) => (
               <AnimatedSection key={index} delay={index * 100}>
                 <div className="bg-gradient-to-br from-brand-purple to-brand-purple-dark rounded-2xl p-6 text-center shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                  <div className="w-24 h-24 bg-brand-yellow rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-3xl font-bold text-brand-purple">{member.name.charAt(0)}</span>
+                  <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-brand-yellow">
+                    <img 
+                      src={member.image} 
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <h3 className="text-xl font-bold text-white mb-2">{member.name}</h3>
                   <p className="text-brand-yellow font-semibold mb-2">{member.title}</p>
@@ -231,11 +235,13 @@ const team = [
   {
     name: "Mrs Titilayo",
     title: "gr TTN - Titilayo",
-    role: "Administrator"
+    role: "Administrator",
+    image: "https://lh3.googleusercontent.com/d/1T8TQ04N6KprMkezvmgOCrkL_hCI3Xmmt"
   },
   {
     name: "Mr Giwa David",
     title: "grK - Giwa David",
-    role: "Technologist"
+    role: "Technologist",
+    image: "https://lh3.googleusercontent.com/d/1TDgDdvn9J8IAp78FOObZUNJV7Fj6HKWU"
   }
 ];
