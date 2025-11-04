@@ -156,7 +156,7 @@ export const About: React.FC = () => {
                     <img 
                       src={member.image} 
                       alt={member.name}
-                      className="w-full h-full object-cover scale-75"
+                      className="w-full h-full object-cover object-top"
                     />
                   </div>
                   <h3 className="text-xl font-bold text-white mb-2">{member.name}</h3>
