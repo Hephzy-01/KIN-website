@@ -25,7 +25,7 @@ const App: React.FC = () => {
       ) : (
       <main>
         {/* Hero Section */}
-        <section id="home" className="relative h-[70vh] sm:h-[80vh] flex items-center justify-center text-center overflow-hidden pt-20">
+        <section id="home" className="relative h-[80vh] sm:h-[90vh] flex items-center justify-center text-center overflow-hidden pt-20">
             <div 
                 className="absolute inset-0 bg-cover bg-center animate-zoom-out" 
                 style={{ backgroundImage: "url(https://lh3.googleusercontent.com/d/1fruyjjfTaHdrR8GuvQRFBchD-3JPxBr8)" }}
