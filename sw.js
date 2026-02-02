@@ -4,27 +4,27 @@
  */
 
 const CACHE_NAME = 'kin-v1';
-const OFFLINE_URL = '/offline.html';
+const OFFLINE_URL = 'offline.html';
 
 // Files to cache immediately
 const PRECACHE_FILES = [
-    '/',
-    '/index.html',
-    '/about.html',
-    '/programs.html',
-    '/content.html',
-    '/community.html',
-    '/support.html',
-    '/progress.html',
-    '/css/design-system.css',
-    '/css/responsive.css',
-    '/css/whatsapp-button.css',
-    '/css/progress-tracker.css',
-    '/js/main.js',
-    '/js/stats-counter.js',
-    '/js/progress-tracker.js',
-    '/images/logo.png',
-    '/images/hero-background.jpg',
+    './',
+    'index.html',
+    'about.html',
+    'programs.html',
+    'content.html',
+    'community.html',
+    'support.html',
+    'progress.html',
+    'css/design-system.css',
+    'css/responsive.css',
+    'css/whatsapp-button.css',
+    'css/progress-tracker.css',
+    'js/main.js',
+    'js/stats-counter.js',
+    'js/progress-tracker.js',
+    'images/logo.png',
+    'images/hero-background.jpg',
     OFFLINE_URL
 ];
 
@@ -120,8 +120,8 @@ self.addEventListener('push', event => {
     const title = data.title || 'KidsInspiring Nation';
     const options = {
         body: data.body || 'New content available!',
-        icon: '/images/logo.png',
-        badge: '/images/logo.png',
+        icon: 'images/logo.png',
+        badge: 'images/logo.png',
         vibrate: [200, 100, 200],
         data: {
             url: data.url || '/'
