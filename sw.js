@@ -12,6 +12,7 @@ const PRECACHE_FILES = [
     'index.html',
     'about.html',
     'programs.html',
+    'nation-builders.html',
     'content.html',
     'community.html',
     'support.html',
