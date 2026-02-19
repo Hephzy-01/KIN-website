@@ -2,6 +2,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { resolve } from 'path';
 
+// Target: GitHub Pages deployment via GitHub Actions
 export default defineConfig({
     base: '/KIN-website/',
     plugins: [react()],
